@@ -1,0 +1,66 @@
+
+.container1{
+font-size: 18px;
+font-weight: bold;
+font-family: serif;
+border: 1px whitesmoke solid;
+background-color:  rgb(4, 9, 38);
+align-items: center;
+width:600px;
+height: 600px;
+text-align: center;
+border-radius: 15%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+margin: 0 auto;
+}
+.btn{
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+}
+.btns{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+#email{
+  padding-right: 30px;
+}
+ #phone{
+  padding-right: 30px;
+ }
+
+ body{
+  display: flex;
+  /* flex-direction: column; */
+  overflow-x: hidden;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  background-color: rgb(29, 33, 57);
+  color: whitesmoke;
+ }
+ input, select{
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+  height: 25px;
+  font-size: 15px;
+}
+select{
+  width: 210px;
+  height: 35px;
+}
+label.role{
+  padding-right: 30px;
+}
