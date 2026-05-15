@@ -1,24 +1,22 @@
-import { Sun, Moon, Lightbulb } from "lucide-react";
+import { Moon, Sun } from 'lucide-react';
+import { useTheme } from '../../context/ThemeContext';
+import { Button } from '../ui';
 
-import { useEffect } from "react";
-import { useToggle } from "../../hooks/use-toggle";
+export const ThemeToggle = () => {
+  const { theme, toggleTheme } = useTheme();
 
-function ThemeToggle() {
-  const [dark, toggleDark] = useToggle(false);
-
-  useEffect(() => {
-    if (dark) {
-      document.body.classList.add("dark");
-    } else {
-      document.body.classList.remove("dark");
-    }
-  }, [dark]);
-
-return (
-    <button onClick={toggleDark}>
-      {dark ? <Sun size={20} /> : <Moon size={20} />}
-    </button>
+  return (
+    <Button
+      variant="ghost"
+      onClick={toggleTheme}
+      className="p-2 rounded-full w-10 h-10 flex items-center justify-center transition-all bg-white/5 border border-white/10 text-text-primary"
+      aria-label="Toggle theme"
+    >
+      {theme === 'dark' ? (
+        <Sun size={20} className="text-yellow-400" />
+      ) : (
+        <Moon size={20} className="text-blue-600" />
+      )}
+    </Button>
   );
-}
-
-export default ThemeToggle;
+};
