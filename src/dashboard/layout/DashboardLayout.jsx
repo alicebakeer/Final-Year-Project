@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion} from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { CoreNavbar as Navbar } from '../navbar/Navbar';
 import { Sidebar } from '../sidebar/Sidebar';

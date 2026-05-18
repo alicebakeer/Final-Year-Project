@@ -9,13 +9,15 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Settings from './pages/Settings'
-
+import Add from './dashboard/Admin/Add'
+import Recieve from './dashboard/Transaction/Recieve'
+import Transfer from './dashboard/Transaction/Transfer'
+import WalletPage from './dashboard/Transaction/WalletPage'
 function App() {
   return (
     <ThemeProvider>
       <BrowserRouter>
         <Routes>
-          {/* Main App Routes with PageLayout */}
           <Route path='/*' element={
             <PageLayout>
               <Routes>
@@ -24,6 +26,11 @@ function App() {
                 <Route path='/register' element={<Register />} />
                 <Route path='/settings' element={<Settings />} />
                 <Route path='/about' element={<About />} />
+                <Route path='/add' element={<Add />} />
+                 <Route path='/transfer' element={<Transfer />} />
+                <Route path='/recieve' element={<Recieve />} />
+                <Route path='/walletpage' element={<WalletPage />} />
+              
               </Routes>
             </PageLayout>
           } />
@@ -33,7 +40,6 @@ function App() {
             <DashboardLayout>
               <Routes>
                 <Route index element={<Overview />} />
-                {/* Additional dashboard routes can be added here */}
               </Routes>
             </DashboardLayout>
           } />

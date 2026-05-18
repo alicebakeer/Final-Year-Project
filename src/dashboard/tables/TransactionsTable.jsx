@@ -7,8 +7,7 @@ const transactions = [
   { id: 'TX-12346', user: 'Michael Chen', country: 'Canada', amount: '$750.00', status: 'Pending', date: 'Oct 23, 2024', type: 'outgoing' },
   { id: 'TX-12347', user: 'Elena Rodriguez', country: 'Spain', amount: '$2,100.00', status: 'Failed', date: 'Oct 22, 2024', type: 'incoming' },
   { id: 'TX-12348', user: 'David Smith', country: 'USA', amount: '$450.00', status: 'Success', date: 'Oct 22, 2024', type: 'outgoing' },
-  { id: 'TX-12349', user: 'Alice Bakeer', country: 'UAE', amount: '$3,400.00', status: 'Success', date: 'Oct 21, 2024', type: 'incoming' },
-];
+  ];
 
 export const TransactionsTable = () => {
   return (

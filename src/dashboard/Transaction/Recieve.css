@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f7fb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.receive-container {
+  padding: 30px;
+  min-height: 100vh;
+}
+
+/* Header */
+
+.receive-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.receive-header h1 {
+  font-size: 38px;
+  color: #111;
+}
+
+.receive-header p {
+  margin-top: 5px;
+  color: #777;
+}
+
+.receive-icon {
+  width: 65px;
+  height: 65px;
+  background: #2563eb;
+  color: white;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Card */
+
+.receive-card {
+  background: white;
+  border-radius: 30px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+/* Left Section */
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.wallet-box {
+  background: #f8fafc;
+  padding: 25px;
+  border-radius: 22px;
+}
+
+.wallet-box h3 {
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.address-box {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.address-box p {
+  color: #444;
+  font-size: 14px;
+}
+
+.address-box button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Credit Card */
+
+.bank-card {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border-radius: 28px;
+  padding: 30px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bank-card h2 {
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-bottom p {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* Right Section */
+
+.right-section {
+  background: #f8fafc;
+  border-radius: 25px;
+  padding: 30px;
+  text-align: center;
+}
+
+.qr-box {
+  width: 220px;
+  height: 220px;
+  background: white;
+  border-radius: 25px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.right-section h3 {
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.right-section p {
+  color: #777;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.share-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Stats */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 30px;
+  border-radius: 22px;
+  text-align: center;
+}
+
+.stat-card h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.stat-card p {
+  color: #777;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .receive-card {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .receive-container {
+    padding: 20px;
+  }
+
+  .receive-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .address-box {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .qr-box {
+    width: 180px;
+    height: 180px;
+  }
+}
